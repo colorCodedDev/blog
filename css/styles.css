@@ -1,0 +1,397 @@
+body {
+  background-color: #FFFFFF;
+  color: black;
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+body ul.menu {
+  padding: 0;
+  font-size: 1em;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
+}
+
+body ul.menu li.social-item {
+  display: inline-block;
+  width: 1.2em;
+  color: #F13B84;
+}
+
+body ul.menu li.social-item:hover{
+  transition: all 0.2s ease-in-out;
+}
+
+body ul.menu li.social-item:hover {
+  transform: scale(1.5);
+}
+
+/* 
+*****end of reference***** */
+/* CONTENT BEGINS */
+
+div.logo-container {
+  margin-bottom: -550px;
+}
+
+.logo {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a.link {
+  color: #DBA395;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a.link:hover {
+  color: #2B1A12;
+  transform: scale(1.1);
+}
+
+a.link:selected {
+  color: #DBA395;
+  text-decoration: underline;
+}
+
+hr.menu {
+  padding: 0;
+}
+
+h1 {
+  font-family: Forum;
+  font-size: 24px;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: Forum;
+  font-weight: bold;
+}
+
+.hero-container {
+  margin: 50px 0 100px 0;
+}
+
+.hero1,
+.hero2,
+.hero3 {
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #503335;
+}
+
+.hero1 {
+  background-image: url(https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png);
+}
+
+.hero2 {
+  background-image: url(https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png);
+}
+
+.hero3 {
+  background-image: url(https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png);
+}
+
+.recent-posts {
+  border: 1px solid #d1a3a4;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+}
+
+.all-posts-border {
+  border: 1px solid #d1a3a4;
+  border-radius: 5px;
+}
+
+.post-img {
+  width: 200px;
+  padding: 30px;
+}
+
+.main-img {
+  width: 800px;
+  padding: 50px;
+}
+
+hr {
+  padding: 20px;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+a {
+  color: white;
+}
+
+.all-posts {
+  width: 200px;
+  height: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-back {
+  color: #3d0c02;
+  font-family: Chathura;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10% 10% 20% 10%;
+  border: 1px solid black;
+}
+
+span.month {
+  float: left;
+  font-size: 18px;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+
+span.views {
+  float: right;
+  font-size: 18px;
+  padding-right: 10%;
+  padding-bottom: 10%
+}
+
+.posts {
+  width: 200px;
+  height: 200px;
+}
+
+.post-month {
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 5%;
+  font-family: Forum;
+}
+
+.monthly-title {
+  padding: 5%
+}
+
+.january {
+  background-color: #c58c85;
+  text-decoration: none;
+}
+
+.february {
+  background-color: #ecbcb4;
+  text-decoration: none;
+}
+
+.march {
+  background-color: #d1a3a4;
+  text-decoration: none;
+}
+
+.april {
+  background-color: #a1665e;
+  text-decoration: none;
+}
+
+.march {
+  background-color: #503335;
+  text-decoration: none;
+}
+
+.april {
+  background-color: #592f2a;
+  text-decoration: none;
+}
+
+.may {
+  background-color: #592f2a;
+  text-decoration: none;
+}
+
+.june {
+  background-color: #5a362a;
+  text-decoration: none;
+}
+
+.july {
+  background-color: #a87869;
+  text-decoration: none;
+}
+
+.august {
+  background-color: #bf8977;
+  text-decoration: none;
+}
+
+.september {
+  background-color: #c69d87;
+}
+
+.october {
+  background-color: #3d0c02;
+  text-decoration: none;
+}
+
+.november {
+  background-color: #260701;
+  text-decoration: none;
+}
+
+.december {
+  background-color: #c58c85;
+  text-decoration: none;
+}
+
+.cat {
+  border: 1px solid black;
+  padding: 5px;
+  width: 200px;
+}
+
+.empty {
+  height: 5px;
+  border: none;
+}
+
+.sub {
+  font-size: 8px;
+  padding-left: 10px;
+  margin-top: -20px;
+}
+
+.col-8 col-sm-6 {
+  display: flex;
+  align-items: end;
+}
+
+.col-4 col-sm-6 {
+  display: flex;
+}
+
+em {
+  color: black;
+  font-size: 10px;
+}
+
+span {
+  padding: 0 20px;
+}
+
+h3.side-heading {
+  font-family: "Thasadith";
+  color: black;
+  text-decoration: underline;
+}
+
+/* font-family: 'Agdasima', sans-serif;
+font-family: 'Chathura', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Darker Grotesque', sans-serif;
+font-family: 'Forum', cursive;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Shalimar', cursive;
+font-family: 'Thasadith', sans-serif;
+font-family: 'Tsukimi Rounded', sans-serif;
+font-family: 'Wire One', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif; */
+post-title {
+  margin: 0 10px;
+}
+
+.post-excerpt {
+  text-align: center;
+  font-family: "Thasadith", sans-serif;
+  font-size: 14px;
+}
+
+.link-to-top {
+  color: #3d0c02;
+}
+
+.link-to-top:hover {
+  color: #c58c85;
+}
+
+.empty-bottom {
+  height: 130px;
+}
+
+/* FOOTER BEGINS */
+.footer box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}
+
+.copyright-box {
+  display: flex;
+  align-items: center;
+  padding: 20px 200px;
+  justify-content: center;
+  margin-top: 700px;
+}
