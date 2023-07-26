@@ -66,7 +66,6 @@ a {
 .link {
     color: #D3AB9E;
     transition: all 0.3s ease-in-out;
-    font-size: 16px;
 }
   
 .link:hover {
@@ -450,7 +449,7 @@ span.views {
         padding-bottom: 10%;
     }
 
-    .flip-card-front-all-posts{
+    flip-card-front-all-posts{
         color: white;
     }
 
@@ -573,3 +572,6 @@ span.views {
       
 
 }
+
+
+

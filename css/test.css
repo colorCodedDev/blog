@@ -1,0 +1,269 @@
+body {
+    background-color: #FFFFFF;
+    color: black;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+} */
+  
+.hero {
+    width: 100%;
+}
+  
+body ul.menu {
+    padding: 0;
+    font-size: 1em;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
+}
+  
+body ul.menu li.social-item {
+    display: inline-block;
+    width: 1.2em;
+    color: #F13B84;
+}
+  
+body ul.menu li.social-item:hover{
+    transition: all 0.2s ease-in-out;
+}
+  
+body ul.menu li.social-item:hover {
+    transform: scale(1.5);
+}
+  
+div.logo-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+    
+.menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.link {
+    color: #D3AB9E;
+    transition: all 0.3s ease-in-out;
+}
+  
+.link:hover {
+    color:#2B1A12;
+    transform: scale(1.1);
+}
+  
+.link::selected {
+    color: #F13B84;
+    text-decoration: underline;
+}
+  
+hr {
+    padding: 20px 0 20px 0;
+}
+  
+i.link {
+    color: #F13B84;
+    transition: all 0.3s ease-in-out;
+}
+  
+i.link:hover {
+    color:#d1a3a4;
+    transform: scale(1.1);
+}
+  
+i.link:selected {
+    color:#a1665e;
+    text-decoration: underline;  
+}
+  
+.logo-img {
+    width: 100%;
+}
+  
+.navbar {
+    flex-direction: column;
+    box-shadow: none;
+}
+  
+.menu {
+    font-size: 14px;
+}
+  
+.navbar .navbar-nav {
+    margin-top: 0.5em;
+}
+  
+.nav-logo {
+    width: 100%;
+    padding: 5% 10% 0 10%;
+} 
+    
+/* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
+  
+li.social-item i {
+    width: 1.2em;
+    &.grow {
+        transition: all .2s ease-in-out;
+  
+    &:hover {
+        transform: scale(1.5);
+    }
+    }
+}
+  
+/* *****end of reference******/
+  
+hr.menu {
+    padding: 0;
+}
+
+/* BEGIN CONTENT */
+
+.row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* 
+div.container.text-center {
+    margin-left: -5%;
+} */
+
+.feb_hero {
+    background-image: url(https://i.ibb.co/MMW0LWT/feb.png);
+    width: 500px;
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 80px;
+    border: 1px solid #503335;
+}
+
+h1 {
+    font-family: Forum;
+    text-align: center;
+}
+  
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+    font-family: Forum;
+    font-weight: bold;
+    padding-top: 3%;
+}
+
+.space-top {
+    padding-top: 15%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.topic {
+    padding: 10% 10%;
+}
+
+.subtopic {
+    padding: 1% 10%;
+    line-height: 1.5em;
+}
+  
+
+
+/*content begins*/
+/* FOOTER BEGINS */
+.footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+  
+.copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin-top: 700px;
+}
+  
+  
+@media(min-width: 221px) and (max-width: 400px) {
+
+    
+    /* navbar for 200+ screens begins*/
+    .logo {
+        width: 150%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    hr.menu {
+        padding: 0;
+    }
+
+    /* footer for 200+ screens begins*/
+
+   .footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    padding: 20px 200px;
+    }
+  
+    .copyright {
+    text-align: center;
+    font-size: 14px;
+    }
+  
+    .copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin: 30% auto;
+    }
+}
+
+@media(min-width: 755px) {
+}
