@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Chathura:wght@100;300&family=Dancing+Script&family=Darker+Grotesque:wght@300;400&family=Forum&family=Rajdhani:wght@300;400&family=Shalimar&family=Thasadith:wght@400;700&family=Tsukimi+Rounded:wght@300;400&family=Wire+One&family=Zen+Kurenaido&display=swap" rel="stylesheet">
@@ -13,59 +13,83 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="./css/december.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header box">
-            <div class="logo-container">
-                <img class="logo" src="./images/c o l o r - C o d e d (1000 × 1000 px) (1).png" alt="color-coded-logo">
+        <link rel="stylesheet" href="./css/aug-dec.css">
+    </head>
+    <body>
+        <div>
+
+            <!-- begin navbar -->
+
+            <header>
+                <div class="container hero-container">
+                    <div class="logo">
+                        <div class="logo-img"><img src="./images/color_coded_logo.png" alt="logo" class="nav-logo"></div>
+                        <nav class="navbar navbar-expand-lg navbar-light light">
+                            <div class="navbar-expand" id="navbarNav">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link link" href="index.html">About<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item"><i class="btn btn-light fa-brands fa-facebook-f nav-link social-item" href="https://www.facebook.com"></i></li>
+                                    <li class="nav-item social-item"><i class="btn btn-light fa-brands fa-instagram nav-link social-item" href="https://www.instagram.com"></i></li>
+                                    <li class="nav-item social-item"><i class="btn btn-light fa-brands fa-linkedin-in nav-link social-item" href="https://www.linkedin.com"></i></li>
+                                    <li class="nav-item social-item"><i class="btn btn-light fa-brands fa-codepen nav-link social-item" href="https://www.codepen.com"></i></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- begin content -->
+
+            <div id="index-top" class="container text-center hero-container">
+                <div class="row g-0">
+                  <div class="col aug_hero">
+                  </div>
+                </div>
             </div>
-            <div class="nested-header">
-                <ul class="menu left-side">
-                    <li class="left-side-itewm"><a href="index.html" class="link animate__animated animate__pulse">About</a></li>
-                    <li class="left-side-item"><a href="#" class="link animate__animated animate__pulse">Portfolio</a></li>
-                    <li class="left-side-item"><a href="blog.html" class="link animate__animated animate__pulse">Blog</a></li>
-                    <li class="left-sclasse-item"><a href="#" class="link animate__animated animate__pulse">Contact</a></li>
-                </ul>
-            </div>
-            <hr class="menu">
-            <div class="nested-header">
-                <ul class="menu social">
-                    <li class="social-item"><i class="fa-brands fa-instagram"></i></li>
-                        <li class="social-item"><i class="fa-brands fa-facebook-f"></i></li>
-                        <li class="social-item"><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li class="social-item"><i class="fa-brands fa-codepen"></i></li>
-                </ul>
-            </div>
+
+            <!-- begin footer -->
+
+
+            <section class="footer">
+                <div class="row bottom-nav">
+                    <a href="#top"><p class="link">Return To Top</p></a>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link social-item" href="#">Prev Post</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link social-item" href="#">Next Post</a>
+                        </li>
+                    </ul>
+                </div>
+                <div><a class="social-item" href="index.html">Back To Main Page</a></div>
+                <div class="footer box">
+                    <p class="copyright">All Rights Reserved colorCodedDevelopment © Tomeka Durling 2023</p>
+                </div>
+            </section>
+
+
+
         </div>
-    </div>
-    <div id="index-top" class="container text-center hero-container">
-        <div class="row">
-          <div class="col aug_hero">
-          </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="july.html">Prev Post</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="september.html">Next Post</a>
-            </li>
-          </ul>
-    </div>
-    <div><a href="index.html">Back To Main Page</a></div>
-
-    <div class="footer box">
-        <p class="copyright">All Rights Reserved colorCodedDevelopment © Tomeka Durling 2023</p>
-    </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/7b196b662d.js" crossorigin="anonymous"></script>
-</body>
+        <!-- MDB -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/7b196b662d.js" crossorigin="anonymous"></script>
+    </body>
 </html>

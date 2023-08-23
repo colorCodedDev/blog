@@ -4,7 +4,7 @@ body {
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
     font-size: 1.2em;
-} */
+} 
   
 .hero {
     width: 100%;
@@ -61,6 +61,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 14px;
 }
   
 .link {
@@ -69,7 +70,7 @@ a {
 }
   
 .link:hover {
-    color:#2B1A12;
+    color:#a1665e;
     transform: scale(1.1);
 }
   
@@ -77,26 +78,33 @@ a {
     color: #F13B84;
     text-decoration: underline;
 }
-  
-hr {
-    padding: 20px 0 20px 0;
-}
-  
-i.link {
+
+.social-item {
     color: #F13B84;
     transition: all 0.3s ease-in-out;
 }
-  
-i.link:hover {
-    color:#d1a3a4;
+
+.social-item:hover {
+    color:#a1665e;
     transform: scale(1.1);
 }
-  
-i.link:selected {
-    color:#a1665e;
-    text-decoration: underline;  
+
+.social-item::selected {
+    color: #D3AB9E;
+    text-decoration: underline;
 }
-  
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+hr {
+    padding: 20px 0 20px 0;
+}
+    
 .logo-img {
     width: 100%;
 }
@@ -106,21 +114,19 @@ i.link:selected {
     box-shadow: none;
 }
   
-.menu {
-    font-size: 14px;
-}
-  
 .navbar .navbar-nav {
     margin-top: 0.5em;
+}
+
+.navbar-expand .navbar-nav {
+    justify-content: space-evenly;;
 }
   
 .nav-logo {
     width: 100%;
     padding: 5% 10% 0 10%;
 } 
-    
-/* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
-  
+      
 li.social-item i {
     width: 1.2em;
     &.grow {
@@ -131,16 +137,430 @@ li.social-item i {
     }
     }
 }
+
+span.month-title {
+    color: #F13B84;
+}
   
-/* *****end of reference******/
+.april_hero {
+    background-image: url("https://i.ibb.co/LYcqkRC/April-Blog-Post.png");
+    width: 500px;
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} 
+
+
+h1 {
+    font-family: Forum;
+    text-align: center;
+    font-size: 24px;
+}
   
-hr.menu {
-    padding: 0;
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: Forum;
+    font-weight: bold;
+    padding-top: 3%;
 }
 
-/* BEGIN CONTENT */
+p {
+    padding: 2% 5%;
+}
 
-.row {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.generic-side {
+    padding: 5%;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    margin: o auto;
+}
+
+i {
+    color: #F13B84;
+    font-size: 50px;
+}
+
+.color-topic {
+    color: #F13B84;
+    font-family:"Dancing Script"
+}
+
+.main-img {
+    width: 500px;
+}
+
+.generic-img-1 {
+    background-image: url("https://i.ibb.co/Ks1CfS4/55.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.generic-img-2 {
+    background-image: url("https://i.ibb.co/wWbNvkp/38.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.generic-img-3 {
+    background-image: url("https://i.ibb.co/bvSBpLB/46.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.generic-img-4 {
+    background-image: url("https://i.ibb.co/wCjHFrN/42.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.generic-img-5 {
+    background-image: url("https://i.ibb.co/2tXkCG4/54.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.generic-img-0 {
+    background-image: url("https://i.ibb.co/D5w2L6H/54-1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.topic {
+    padding: 10% 10%;
+}
+
+.subtopic {
+    /* padding: 1% 10%; */
+    line-height: 1.5em;
+} 
+
+.nums {
+    font-family: Forum;
+    font-size: 60px;
+    /* margin-left: -20%; */
+}
+
+.footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+  
+.copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin-top: 700px;
+}
+  
+  
+@media(min-width: 200px) and (max-width: 400px) {
+
+    .main-content-small-screens {
+        display: block;
+    }
+
+    .main-content-lg-screens {
+        display: none;
+    } 
+
+    .navbar .navbar-nav {
+        font-size: 14px;
+    }
+    
+      div.logo-img {
+        width: 80%;
+    }
+    
+      img.nav-logo {
+        width: 100%
+    }
+
+    h1 {
+        font-family: Forum;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 10%;
+    }
+    
+    p {
+        padding: 2% 5%;
+    }
+
+    .generic-img {
+        width: 300px;
+    }
+
+    img.influencer-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+      
+    
+    
+}
+
+@media(min-width: 401px) and (max-width: 800px) {
+
+    .main-content-small-screens {
+        display: block;
+    }
+
+    .main-content-lg-screens {
+        display: none;
+    } 
+
+    .navbar .navbar-nav {
+        font-size: 18px;
+    }
+
+    .main-content {
+        width: 70%;
+        padding: 10%;
+    }
+
+    .main-img {
+        width: 70%;
+    }
+
+    h1 {
+        font-family: Forum;
+        text-align: center;
+        font-size: 24px;
+    }
+      
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 3%;
+    }
+    
+    p {
+        padding: 2% 5%;
+        font-size: 1rem;
+         margin: 5%;
+    }
+
+    .april_hero {
+        width: 700px;
+        height: 500px;
+    }
+
+    .side-resources {
+        padding: 2% 5%;
+        font-size: 1rem;
+         margin: 7%;
+    }
+
+    img.influencer-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+   
+}
+
+@media(min-width: 801px) and (max-width: 1200px) {
+
+    .navbar .navbar-nav {
+        font-size: 20px;
+    }
+
+    .april_hero {
+        margin: 0 auto;
+        height: 600px;
+        width: 800px;
+    }
+
+    .main-content-small-screens {
+        display: none;
+    }
+
+    .main-content-lg-screens {
+        display: block;
+    } 
+
+    .main-content {
+        width: 80%;
+        padding: 10%;
+    }
+
+    .main-img {
+        width: 75%;
+    }
+
+    .nav-logo {
+        width: 80%;
+    }
+
+    .inside-content-container {
+        width: fit-content;
+    }
+
+    h1 {
+        font-family: Forum;
+        text-align: center;
+        padding: 5%;
+    }
+      
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 3%;
+        margin: 5%;
+    }
+    
+    p {
+        padding: 2%;
+        font-size: 22px;
+    }
+
+    .nums {
+        font-size: 120px;
+    }
+
+    .main-content-left {
+        font-size: 22px;
+        padding: 2%;
+    }
+
+    .lorem-ipsum {
+        padding: 5%;
+    }
+
+    .follow {
+        padding: 2%;
+        width: 25%;
+        margin-left: 8%;
+        border: 1px solid black;
+        margin-top: 3%;
+    }
+
+    .generic-ul {
+        text-align: left;
+        margin-left: -3%;
+    }
+
+    img.influencer-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
+
+@media(min-width: 1201px) {
+
+    .main-content-small-screens {
+        display: none;
+    }
+
+    .main-content-lg-screens {
+        display: block;
+    }
+
+    .april_hero {
+        height: 800px;
+        width: 1000px;
+    }
+
+    .main-content {
+        width: 80%;
+        padding: 10%;
+    }
+
+    .main-img {
+        width: 75%;
+    }
+
+    .nav-logo {
+        width: 80%;
+    }
+
+    .inside-content-container {
+        width: fit-content;
+    }
+
+    h1 {
+        font-family: Forum;
+        text-align: center;
+        font-size: 28px;
+        padding: 5%;
+    }
+      
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 3%;
+        margin: 5%;
+    }
+    
+    p {
+        padding: 2%;
+        font-size: 22px;
+    }
+
+    .nums {
+        font-size: 120px;
+    }
+
+    .main-content-left {
+        font-size: 22px;
+        padding: 2%;
+    }
+
+    .lorem-ipsum {
+        padding: 5%;
+    }
+
+    .follow {
+        padding: 2%;
+        width: 25%;
+        margin-left: 8%;
+        border: 1px solid black;
+        margin-top: 3%;
+    }
+
+    .generic-ul {
+        text-align: left;
+        margin-left: -3%;
+    }
 }

@@ -4,7 +4,7 @@ body {
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
     font-size: 1.2em;
-} */
+} 
   
 .hero {
     width: 100%;
@@ -17,7 +17,6 @@ body ul.menu {
     margin-top: 20px;
     justify-content: space-around;
     align-items: center;
-    /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
 }
   
 body ul.menu li.social-item {
@@ -61,6 +60,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 14px;
 }
   
 .link {
@@ -69,7 +69,7 @@ a {
 }
   
 .link:hover {
-    color:#2B1A12;
+    color:#a1665e;
     transform: scale(1.1);
 }
   
@@ -77,26 +77,33 @@ a {
     color: #F13B84;
     text-decoration: underline;
 }
-  
-hr {
-    padding: 20px 0 20px 0;
-}
-  
-i.link {
+
+.social-item {
     color: #F13B84;
     transition: all 0.3s ease-in-out;
 }
-  
-i.link:hover {
-    color:#d1a3a4;
+
+.social-item:hover {
+    color:#a1665e;
     transform: scale(1.1);
 }
-  
-i.link:selected {
-    color:#a1665e;
-    text-decoration: underline;  
+
+.social-item::selected {
+    color: #D3AB9E;
+    text-decoration: underline;
 }
-  
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+hr {
+    padding: 20px 0 20px 0;
+}
+    
 .logo-img {
     width: 100%;
 }
@@ -106,66 +113,122 @@ i.link:selected {
     box-shadow: none;
 }
   
-.menu {
-    font-size: 14px;
-}
-  
 .navbar .navbar-nav {
     margin-top: 0.5em;
+}
+
+.navbar-expand .navbar-nav {
+    justify-content: space-evenly;;
 }
   
 .nav-logo {
     width: 100%;
     padding: 5% 10% 0 10%;
 } 
+
+.month-title {
+    color: #F13B84;
+}
     
-/* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
-  
-li.social-item i {
-    width: 1.2em;
-    &.grow {
-        transition: all .2s ease-in-out;
-  
-    &:hover {
-        transform: scale(1.5);
-    }
-    }
-}
-  
-/* *****end of reference******/
-  
-hr.menu {
-    padding: 0;
-}
-
-/* BEGIN CONTENT */
-
-.row {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.feb_hero {
+    background-image: url("https://i.ibb.co/MMW0LWT/feb.png");
+    width: 500px;
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 80px;
+    border: 1px solid #503335;
 }
 
 h1 {
     font-family: Forum;
     text-align: center;
+    font-size: 24px;
 }
   
 h2,
 h3,
-h4,
-h5 {
+h4 {
     text-align: center;
     font-family: Forum;
     font-weight: bold;
     padding-top: 3%;
 }
 
-.space-top {
-    padding-top: 15%;
+p {
+    padding: 2% 5%;
 }
 
 .hero {
     width: 100%;
+}
+
+.feb_hero_1 {
+    background-image: url("https://i.ibb.co/LNy99vW/40.png");
+
+}
+
+.feb_hero_2 {
+    background-image: url("https://i.ibb.co/pjYv3zb/41.png");
+}
+
+.feb_hero_3 {
+    background-image: url("https://i.ibb.co/HPMPp3p/86.png");
+}
+
+.feb_hero_1, 
+.feb_hero_2, 
+.feb_hero_3 {
+    background-size: contain;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 10px; */
+    margin: 0 5px;
+    padding: 0;
+    /* border: 1px solid #503335; */
+    width: 100%;
+}
+
+.sm-img-1 {
+    background-image: url("https://i.ibb.co/NtSHzGj/47.png");
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-left: -3%; */
+}
+
+.sm-img-3 {
+    background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-labor-force-by-race.jpg");
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-left: -3%;
+    width: 85%; */
+}
+
+.sm-img-5 {
+    background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-negotiated-salary-by-race.jpg");
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-left: -3%;
+    width: 85%; */
+}
+
+.sm-img-8 {
+    background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-demographics-by-company.jpg");
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-left: -3%;
+    width: 85%; */
 }
 
 .topic {
@@ -173,16 +236,14 @@ h5 {
 }
 
 .subtopic {
-    padding: 1% 10%;
+    /* padding: 1% 10%; */
     line-height: 1.5em;
-}
+} 
 
 .footer box {
     display: grid;
     align-items: center;
     justify-content: center;
-    margin: 10% auto;
-    padding: 20px 200px;
 }
   
 .copyright {
@@ -195,42 +256,445 @@ h5 {
     align-items: center;
     padding: 20px 200px;
     justify-content: center;
-    margin: 30% auto;
+    margin-top: 700px;
 }
+  
+  
+@media(min-width: 200px) and (max-width: 400px) {
+    .navbar .navbar-nav {
+        font-size: 14px;
+    }
+    
+    div.logo-img {
+        width: 80%;
+    }
+    
+    img.nav-logo {
+        width: 100%
+    }
 
+    .feb_hero {
+        width: 300px;
+        height: 500px;
+        background-size: contain;
+        border: none;
+        margin: 20px;
+        padding:10px;
+    }
 
-.feb_hero {
-    background-image: url(https://i.ibb.co/MMW0LWT/feb.png);
-    width: 500px;
-    background-size: cover;
-    height: 1000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px;
-    margin: 80px;
-    border: 1px solid #503335;
-}
+    h1 {
+        font-family: Forum;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 10%;
+    }
 
-@media (min-width: 525px) {
-    .large-screen-content-container {
+    .main-sm-content-section {
+        display: block;
+    }
+
+    .main-lg-content-section {
         display: none;
     }
 
-    .small-screen-content-container {
+    .nums {
+        font-family: Forum;
+        font-size: 60px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 20px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+
+    /* .sub-subtopic {
+        max-width: 65%;
+        font-size: 18px;
+        margin-left: 8%;
+    } */
+
+    .sm-img-1 {
+        background-image: url("https://i.ibb.co/NtSHzGj/47.png");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%; */
+    }
+
+    .sm-img-3 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-labor-force-by-race.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .sm-img-5 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-negotiated-salary-by-race.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .sm-img-8 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-demographics-by-company.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .references {
+        max-width: 75%;
+        font-size: 1em;
+        color: blue;
+        font-style: italic;
+
+    }
+
+    .stats{
+        text-align: left;
+        list-style: disc;
+        font-weight:bold;
+        padding: 5%;
+        margin-left: 15%;
+    }
+
+}
+
+@media(min-width: 401px) and (max-width: 800px) {
+    .navbar .navbar-nav {
+        font-size: 18px;
+    }
+
+    .feb_hero {
+        width: 400px;
+        height: 700px;
+        background-size: contain;
+        border: none;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .main-sm-content-section {
+        display: block;
+    }
+
+    .main-lg-content-section {
+        display: none;
+    }
+
+    .nums {
+        font-family: Forum;
+        font-size: 70px;
+        /* margin-left: -20%; */
+    }
+
+}
+
+
+
+@media(min-width: 801px) and (max-width: 1200px) {
+    .navbar .navbar-nav {
+        font-size: 20px;
+    }
+
+    .feb_hero {
+        background-size: contain;
+        width: 500px;
+        height: 1000px;
+        border: none;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .main-sm-content-section {
+        display: none;
+    }
+
+    .main-lg-content-section {
+        display: block;
+    }
+
+    .main-images{
+        display: flex;
+        flex-direction: row;
+        padding: 0 10%;
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm-img-1 {
+        background-image: url("https://i.ibb.co/NtSHzGj/47.png");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%; */
+    }
+
+    .sm-img-3 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-labor-force-by-race.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .sm-img-5 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-negotiated-salary-by-race.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .sm-img-8 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-demographics-by-company.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .nums {
+        font-family: Forum;
+        font-size: 120px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 30px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+
+    .references {
+        max-width: 75%;
+        font-size: 1em;
+        color: blue;
+        font-style: italic;
+
+    }
+
+    .stats{
+        text-align: left;
+        list-style: disc;
+        font-weight:bold;
+        padding: 5%;
+    }
+
+    .recent-posts-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .january-blog-post {
+        background-image: url("https://i.ibb.co/YP8nMTq/jan-500.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: none;
+        width: 200px;
+        height: 200px;
+        margin: 10%;
+    }
+
+    .december-blog-post {
+        background-image: url("https://i.ibb.co/89rT06b/marchsqpost.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: none;
+        width: 200px;
+        height: 200px;
+        margin: 10%
+    }
+
+    .november-blog-post {
+        background-image: url("https://i.ibb.co/R2vyYN1/May-Blog-Post-500.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: none;
+        width: 200px;
+        height: 200px;
+        margin: 10%;
+    }
+}
+
+@media(min-width: 1201px) {
+    .main-sm-content-section {
+        display: none;
+    }
+
+    .main-lg-content-section {
         display: block;
     }
 
     .feb_hero {
-        height: 500px;
+        background-size: contain;
+        width: 500px;
+        height: 1000px;
+        border: none;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .main-images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sm-img-1 {
+        background-image: url("https://i.ibb.co/NtSHzGj/47.png");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%; */
+    }
+
+    .sm-img-3 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-labor-force-by-race.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .sm-img-5 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-negotiated-salary-by-race.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+    .sm-img-8 {
+        background-image: url("https://www.zippia.com/wp-content/uploads/2022/03/high-tech-demographics-by-company.jpg");
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* margin-left: -3%;
+        width: 85%; */
+    }
+
+
+    .nums {
+        font-family: Forum;
+        font-size: 120px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 30px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+
+    .references {
+        max-width: 75%;
+        font-size: 1em;
+        color: blue;
+        font-style: italic;
+
+    }
+
+    .stats{
+        text-align: left;
+        list-style: disc;
+        font-weight:bold;
+        padding: 5%;
+    }
+
+    .recent-posts-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .january-blog-post {
+        background-image: url("https://i.ibb.co/YP8nMTq/jan-500.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: none;
+        width: 200px;
+        height: 200px;
+        margin: 10%;
+    }
+
+    .december-blog-post {
+        background-image: url("https://i.ibb.co/89rT06b/marchsqpost.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: none;
+        width: 200px;
+        height: 200px;
+        margin: 10%
+    }
+
+    .november-blog-post {
+        background-image: url("https://i.ibb.co/R2vyYN1/May-Blog-Post-500.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: none;
+        width: 200px;
+        height: 200px;
+        margin: 10%;
     }
 }
 
-@media(min-width: 755px) {
-    .large-screen-content-container {
-        display: block;
-    }
-
-    .small-screen-content-container {
-        display: none;
-    }
-}

@@ -163,6 +163,48 @@ p {
     padding: 2% 5%;
 }
 
+.aug_hero {
+    background-image: url("https://i.ibb.co/YkRpTTp/aug-coming-soon.png");
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sept_hero {
+    background-image: url("https://i.ibb.co/rcvrGf5/september2-comingsoon.png");
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.oct_hero {
+    background-image: url("https://i.ibb.co/DVx1GV8/october-comingsoon.png");
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nov_hero {
+    background-image: url("https://i.ibb.co/mSp6Vh4/november-comingsoon.png");
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dec_hero {
+    background-image: url("https://i.ibb.co/JsLfyY8/december-comingsoon.png");
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+        
+}
+
+
 .footer box {
     display: grid;
     align-items: center;
@@ -214,9 +256,42 @@ p {
       p {
         padding: 2% 5%;
       }
-      
+
+      .aug_hero {
+        margin-top: -40%;
+        width: 300px;
+      }
+
+      .sept_hero {
+        margin-top: -40%;
+        width: 300px;
+      }
+
+      .oct_hero {
+        margin-top: -40%;
+        width: 300px;
+      }
+
+      .nov_hero {
+        margin-top: -40%;
+        width: 300px;
+      }
+
+      .dec_hero {
+        margin-top: -40%;
+        width: 300px;
+      }
     
+    /* navbar for 200+ screens begins*/
     
+    /* .logo {
+        width: 150%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } */
+
 }
 
 @media(min-width: 401px) and (max-width: 800px) {

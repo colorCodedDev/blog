@@ -4,7 +4,7 @@ body {
   font-family: "Darker Grotesque", sans-serif;
   text-align: center;
   font-size: 1.2em;
-} */
+} 
 
 .hero {
   width: 100%;
@@ -56,12 +56,12 @@ a {
   text-decoration: none;
 }
 
-
 .menu {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 14px;
 }
 
 .link {
@@ -96,7 +96,6 @@ i.link:hover {
 i.link:selected {
   color:#a1665e;
   text-decoration: underline;
-
 }
 
 .logo-img {
@@ -108,12 +107,6 @@ i.link:selected {
   box-shadow: none;
 }
 
-
-
-.menu {
-  font-size: 14px;
-}
-
 .navbar .navbar-nav {
   margin-top: 0.5em;
 }
@@ -122,8 +115,6 @@ i.link:selected {
   width: 100%;
   padding: 5% 10% 0 10%;
 } 
-
-
 
 /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
 
@@ -138,10 +129,7 @@ li.social-item i {
   }
 } 
 
-/* 
-*****end of reference*****
-
- /* BEGIN CONTENT */
+/* *****end of reference*****/
 
 h1 {
   font-family: Forum;
@@ -577,7 +565,7 @@ p {
 
 }
 
-@media(min-width:1201px) {
+@media(min-width: 1201px) {
   section.hero {
     display: none;
   }

@@ -4,7 +4,7 @@ body {
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
     font-size: 1.2em;
-} */
+} 
   
 .hero {
     width: 100%;
@@ -61,6 +61,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 14px;
 }
   
 .link {
@@ -69,7 +70,7 @@ a {
 }
   
 .link:hover {
-    color:#2B1A12;
+    color:#a1665e;
     transform: scale(1.1);
 }
   
@@ -77,26 +78,33 @@ a {
     color: #F13B84;
     text-decoration: underline;
 }
-  
-hr {
-    padding: 20px 0 20px 0;
-}
-  
-i.link {
+
+.social-item {
     color: #F13B84;
     transition: all 0.3s ease-in-out;
 }
-  
-i.link:hover {
-    color:#d1a3a4;
+
+.social-item:hover {
+    color:#a1665e;
     transform: scale(1.1);
 }
-  
-i.link:selected {
-    color:#a1665e;
-    text-decoration: underline;  
+
+.social-item::selected {
+    color: #D3AB9E;
+    text-decoration: underline;
 }
-  
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+hr {
+    padding: 20px 0 20px 0;
+}
+    
 .logo-img {
     width: 100%;
 }
@@ -106,12 +114,12 @@ i.link:selected {
     box-shadow: none;
 }
   
-.menu {
-    font-size: 14px;
-}
-  
 .navbar .navbar-nav {
     margin-top: 0.5em;
+}
+
+.navbar-expand .navbar-nav {
+    justify-content: space-evenly;;
 }
   
 .nav-logo {
@@ -131,16 +139,452 @@ li.social-item i {
     }
     }
 }
+
+.month-title {
+    color: #F13B84;
+}
   
 /* *****end of reference******/
   
-hr.menu {
-    padding: 0;
+
+
+h1 {
+    font-family: Forum;
+    text-align: center;
+    font-size: 24px;
+}
+  
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: Forum;
+    font-weight: bold;
+    padding-top: 3%;
 }
 
-/* BEGIN CONTENT */
-
-.row {
-    padding-top: 30px;
-    padding-bottom: 30px;
+p {
+    padding: 2% 5%;
 }
+
+.may_hero {
+    background-image: url("https://i.ibb.co/KrB3M8F/May-Blog-Post.png");
+    width: 500px;
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.christina-morillo {
+    background-image: url("https://i.ibb.co/0j1DCYz/pexels-christina-morillo-1181555.jpg");
+    width: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.may71 {
+    background-image: url("https://i.ibb.co/GPZTyR5/71.png");
+    width: 300px;
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .may73 {
+    background-image: url("https://i.ibb.co/C0yxwxR/58.png");
+    width: 300px;
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .may74 {
+    background-image: url("https://i.ibb.co/GMMv8vC/mason-380-pexels-godisable-jacob-1252982.png");
+    width: 500px;
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .may325 {
+    background-image: url("https://i.ibb.co/ZXVTY7C/mason-325-pexels-ron-lach-9577509.png");
+    width: 500px;
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.side-img-may {
+    width: 70%;
+}
+
+.footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+  
+.copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin-top: 700px;
+}
+  
+  
+@media(min-width: 200px) and (max-width: 400px) {
+    .main-content {
+        display: block;
+    }
+
+    .main-content-lg-screen {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        font-size: 14px;
+    }
+    
+      div.logo-img {
+        width: 80%;
+    }
+    
+      img.nav-logo {
+        width: 100%
+    }
+
+    h1 {
+        font-family: Forum;
+        font-size: 24px;
+        text-align: center;
+      }
+    
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 10%;
+      }
+
+      .generic-topic {
+        font-family: Forum;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    
+      p {
+        padding: 2% 5%;
+      }
+
+      .may_hero {
+        margin: 0 auto;
+      }
+
+      .side-image-may {
+        width: 60%;
+      }
+
+      .generic-img {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .christina-morillo {
+        background-image: url("https://i.ibb.co/0j1DCYz/pexels-christina-morillo-1181555.jpg");
+        width: 500px;
+        height: 300px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    
+    .may71 {
+        background-image: url("https://i.ibb.co/GPZTyR5/71.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+      .may73 {
+        background-image: url("https://i.ibb.co/C0yxwxR/58.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+      .may74 {
+        background-image: url("https://i.ibb.co/GMMv8vC/mason-380-pexels-godisable-jacob-1252982.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+      .may325 {
+        background-image: url("https://i.ibb.co/ZXVTY7C/mason-325-pexels-ron-lach-9577509.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    
+    /* navbar for 200+ screens begins*/
+    /* .logo {
+        width: 150%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    hr.menu {
+        padding: 0;
+    } */
+
+    /* footer for 200+ screens begins*/
+
+   /* .footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    padding: 20px 200px;
+    }
+  
+    .copyright {
+    text-align: center;
+    font-size: 14px;
+    }
+  
+    .copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin: 30% auto;
+    } */
+}
+
+@media(min-width: 401px) and (max-width: 800px) {
+    .main-content {
+        display: block;
+    }
+
+    .main-content-lg-screen {
+        display: none;
+    }
+
+    .navbar .navbar-nav {
+        font-size: 18px;
+    }
+
+    .generic-img {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+    .generic-topic {
+        font-family: Forum;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .christina-morillo {
+        background-image: url("https://i.ibb.co/0j1DCYz/pexels-christina-morillo-1181555.jpg");
+        width: 500px;
+        height: 300px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    
+    .may71 {
+        background-image: url("https://i.ibb.co/GPZTyR5/71.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+    
+      .may73 {
+        background-image: url("https://i.ibb.co/C0yxwxR/58.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+    
+      .may74 {
+        background-image: url("https://i.ibb.co/GMMv8vC/mason-380-pexels-godisable-jacob-1252982.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+    
+      .may325 {
+        background-image: url("https://i.ibb.co/ZXVTY7C/mason-325-pexels-ron-lach-9577509.png");
+        width: 500px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+      }
+}
+
+@media(min-width: 801px) and (max-width: 1200px) {
+    .main-content {
+        display: none;
+    }
+
+    .main-content-lg-screen {
+        display: block;
+    }
+
+    .navbar .navbar-nav {
+        font-size: 20px;
+    }
+
+    .generic-topic {
+        font-family: Forum;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .generic-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.col.may_hero {
+        padding-bottom: 20%;
+        margin-bottom: 30%;
+    }
+
+    .may71 {
+        width: 500px;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    
+      .may73 {
+        width: 500px;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    
+      .may74 {
+        width: 500px;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    
+}
+
+@media(min-width: 1201px) {
+    .main-content {
+        display: none;
+    }
+
+    .main-content-lg-screen {
+        display: block;
+    }
+
+    .generic-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .generic-topic {
+        font-family: Forum;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    div.col.may_hero {
+        margin-bottom: 10%;
+    }
+
+    .may71 {
+        width: 600px;
+        background-size: contain;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    
+      .may73 {
+        width: 600px;
+        background-size: contain;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    
+      .may74 {
+        width: 600px;
+        background-size: contain;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+    .generic-main {
+        padding: 10%;
+    }
+
+    .generic-side {
+        padding: 5%;
+    }
+} 

@@ -4,22 +4,33 @@ body {
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
     font-size: 1.2em;
-} */
-  
-.hero {
+    margin: 0;
+    padding: 0;
     width: 100%;
+} 
+
+div.outside-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+div.header {
+    width: 100vw;
+    margin: 0 auto;
 }
   
 body ul.menu {
     padding: 0;
-    font-size: 1em;
     display: flex;
-    margin-top: 20px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
 }
-  
+
 body ul.menu li.social-item {
     display: inline-block;
     width: 1.2em;
@@ -39,6 +50,7 @@ div.logo-container {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 5%;
 }
   
 .logo {
@@ -46,6 +58,7 @@ div.logo-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
   
 ul {
@@ -54,13 +67,6 @@ ul {
   
 a {
     text-decoration: none;
-}
-    
-.menu {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
   
 .link {
@@ -79,7 +85,7 @@ a {
 }
   
 hr {
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
 }
   
 i.link {
@@ -94,7 +100,8 @@ i.link:hover {
   
 i.link:selected {
     color:#a1665e;
-    text-decoration: underline;  
+    text-decoration: underline;
+  
 }
   
 .logo-img {
@@ -106,10 +113,6 @@ i.link:selected {
     box-shadow: none;
 }
   
-.menu {
-    font-size: 14px;
-}
-  
 .navbar .navbar-nav {
     margin-top: 0.5em;
 }
@@ -118,29 +121,306 @@ i.link:selected {
     width: 100%;
     padding: 5% 10% 0 10%;
 } 
-    
-/* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
-  
-li.social-item i {
-    width: 1.2em;
-    &.grow {
-        transition: all .2s ease-in-out;
-  
-    &:hover {
-        transform: scale(1.5);
-    }
-    }
-}
-  
-/* *****end of reference******/
-  
-hr.menu {
-    padding: 0;
+
+.month-logo {
+    color: #F13B84;
 }
 
-/* BEGIN CONTENT */
+.jan_hero {
+    background-image: url(https://i.ibb.co/k86sJGV/jan-colorcodeddev-com.png);
+    width: 500px;
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 80px;
+    border: 1px solid #503335;
+}
 
-.row {
-    padding-top: 30px;
-    padding-bottom: 30px;
+h1 {
+    font-family: Forum;
+    text-align: center;
+}
+  
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+    font-family: Forum;
+    font-weight: bold;
+    padding-top: 3%;
+}
+
+.space-top {
+    padding-top: 15%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.topic {
+    padding: 10% 10%;
+}
+
+.subtopic {
+    padding: 1% 10%;
+    line-height: 1.5em;
+}
+
+.img-1 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20% auto;
+}
+
+.img-2 {
+    padding: 5% 0;
+    width: 85%;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-img {
+    width: 80%;
+}
+
+.resources-img-2 {
+    width: 50px;
+}
+
+/* .side-topic {
+    width: 20%;
+    margin-left: 10%;
+} */
+
+.side-topic-border {
+    border: 1px solid black;
+    padding: 5%;
+}
+
+.sm-col {
+    text-align: center;
+    padding: 2% 5%;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 20px;
+}
+
+.resource-img {
+    padding: 10% 0;
+}
+
+.resource-header {
+    padding: 10% 5%;
+    font-style: italic;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;;
+}
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* FOOTER BEGINS*/
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding: 20%;
+}
+  
+.copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin-top: 700px;
+}
+  
+
+@media(min-width: 200px) and (max-width: 400px) {
+  
+    .navbar .navbar-nav {
+      border-bottom: 1px solid #000;
+    }
+
+    .hero-row-january {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul.menu {
+        font-size: 14px;
+    }
+  
+    div.logo-img {
+      width: 80%;
+    }
+  
+    img.nav-logo {
+      width: 100%
+    }
+
+    .bottom-nav{
+        font-size: 14px;
+    }
+
+    .jan-hero {
+        background-size: contain;
+        height: 500px;
+    }
+
+    .lg-content-container {
+        display: none;
+    }
+
+    .img-2 {
+        margin: 0 auto;
+    }
+
+    .resources-img {
+        width: 85%;
+        padding: 5%  0;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media(min-width: 401px) and (max-width: 567px) {
+    .lg-content-container {
+        display: none;
+    }
+   
+    .navbar .navbar-nav {
+        border-bottom: 1px solid #000;
+        font-size: 18px;
+    }
+
+    .jan_hero {
+        background-size: contain;
+        height: 500px;
+        padding: 0;
+        margin: 20% auto;
+        border: none;
+    }
+
+    div.main-content-sm {
+        margin: 0 auto;
+    }
+
+    .lg-content-container {
+        display: none;
+    }
+
+    .img-2 {
+        margin: 0 auto;
+    }
+
+    .resources-img {
+        margin: 0 auto;
+    }
+
+    div.bottom-footer {
+        margin-left: unset;;
+    }
+
+}
+
+@media(min-width:568px) and (max-width: 800px) {
+
+    div.outside-container {
+        margin: 0 auto;
+    }
+
+    .jan_hero {
+        background-size: contain;
+        height: 500px;
+        padding: 0;
+        margin: 20% auto;
+        border: none;
+    }
+
+    .lg-content-container {
+        display: none;
+    }
+
+    .img-2 {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .resources-img {
+        margin: 0 auto;
+    }
+
+    .inside-content-container {
+        width: fit-content;
+    }
+}
+
+@media(min-width: 801px) and (max-width: 1200px) {
+
+    .navbar .navbar-nav {
+      border-bottom: 1px solid #000;
+      font-size: 20px;
+    }
+
+    div.header {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .jan-hero {
+        background-size: cover;
+    }
+
+    .sm-content-container {
+        display: none;
+    }
+
+    div.outside-container {
+        margin: 0 auto;
+    }
+
+    .left-side-content-container {
+        width: 60%;
+    }
+}
+
+@media(min-width: 1201px) {
+    .sm-content-container {
+        display: none;
+    }
+
+    .jan-hero {
+        background-size: cover;;
+    }
 }

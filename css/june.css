@@ -4,7 +4,7 @@ body {
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
     font-size: 1.2em;
-} */
+} 
   
 .hero {
     width: 100%;
@@ -61,6 +61,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 14px;
 }
   
 .link {
@@ -69,7 +70,7 @@ a {
 }
   
 .link:hover {
-    color:#2B1A12;
+    color:#a1665e;
     transform: scale(1.1);
 }
   
@@ -77,26 +78,33 @@ a {
     color: #F13B84;
     text-decoration: underline;
 }
-  
-hr {
-    padding: 20px 0 20px 0;
-}
-  
-i.link {
+
+.social-item {
     color: #F13B84;
     transition: all 0.3s ease-in-out;
 }
-  
-i.link:hover {
-    color:#d1a3a4;
+
+.social-item:hover {
+    color:#a1665e;
     transform: scale(1.1);
 }
-  
-i.link:selected {
-    color:#a1665e;
-    text-decoration: underline;  
+
+.social-item::selected {
+    color: #D3AB9E;
+    text-decoration: underline;
 }
-  
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+hr {
+    padding: 20px 0 20px 0;
+}
+    
 .logo-img {
     width: 100%;
 }
@@ -106,12 +114,12 @@ i.link:selected {
     box-shadow: none;
 }
   
-.menu {
-    font-size: 14px;
-}
-  
 .navbar .navbar-nav {
     margin-top: 0.5em;
+}
+
+.navbar-expand .navbar-nav {
+    justify-content: space-evenly;;
 }
   
 .nav-logo {
@@ -131,16 +139,470 @@ li.social-item i {
     }
     }
 }
+
+.month-title {
+    color: #F13B84;
+}
   
 /* *****end of reference******/
   
-hr.menu {
-    padding: 0;
+
+
+h1 {
+    font-family: Forum;
+    text-align: center;
+    font-size: 24px;
+}
+  
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: Forum;
+    font-weight: bold;
+    padding-top: 3%;
 }
 
-/* BEGIN CONTENT */
-
-.row {
-    padding-top: 30px;
-    padding-bottom: 30px;
+p {
+    padding: 2% 5%;
 }
+
+.june_hero {
+    background-image: url("https://i.ibb.co/G7xVgNg/June-Blog-Post.png");
+    width: 500px;
+    background-size: contain;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 80px;
+}
+
+.june_hero_1 {
+    background-image: url("https://i.ibb.co/WH9YFPt/pexels-nappy-3063910.jpg");
+    width: 200px;
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.june_hero_2 {
+    width: 200px;
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://i.ibb.co/NsPQnGY/pexels-godisable-jacob-756570.jpg");
+}
+
+.june_hero_3 {
+    width: 200px;
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://i.ibb.co/DWwcrqS/87.png");   
+}
+
+.generic-img-1 {
+    background-image: url("https://i.ibb.co/Ks1CfS4/55.png");
+    background-size: contain;
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.generic-img-2 {
+    background-image: url("https://i.ibb.co/wWbNvkp/38.png");
+    background-size: contain;
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.generic-img-3 {
+    background-image: url("https://i.ibb.co/bvSBpLB/46.png");
+    background-size: contain;
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.generic-img-4 {
+    background-image: url("https://i.ibb.co/wCjHFrN/42.png");
+    background-size: contain;
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;   
+    margin: 0 auto;
+}
+
+.generic-img-5 {
+    background-image: url("https://i.ibb.co/D5w2L6H/54-1.png");
+    background-size: contain;
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;   
+    margin: 0 auto;
+}
+
+.community-img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.footer box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+  
+.copyright-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    justify-content: center;
+    margin-top: 700px;
+}
+  
+  
+@media(min-width: 200px) and (max-width: 400px) {
+    .navbar .navbar-nav {
+        font-size: 14px;
+    }
+    
+      div.logo-img {
+        width: 80%;
+    }
+    
+      img.nav-logo {
+        width: 100%
+    }
+
+    h1 {
+        font-family: Forum;
+        font-size: 24px;
+        text-align: center;
+      }
+    
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        font-family: Forum;
+        font-weight: bold;
+        padding-top: 10%;
+      }
+    
+      p {
+        padding: 2% 5%;
+    }
+
+    .june_hero {
+        background-image: url("https://i.ibb.co/G7xVgNg/June-Blog-Post.png");
+        width: 300px;
+        height: 500px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    
+    .june_hero_1 {
+        background-image: url("https://i.ibb.co/WH9YFPt/pexels-nappy-3063910.jpg");
+        width: 200px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 2%;
+    }
+    
+    .june_hero_2 {
+        margin: 2%;
+        width: 200px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.ibb.co/NsPQnGY/pexels-godisable-jacob-756570.jpg");
+    }
+    
+    .june_hero_3 {
+        margin: 2%;
+        width: 200px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.ibb.co/DWwcrqS/87.png");   
+    }
+
+    .nums {
+        font-family: Forum;
+        font-size: 60px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 20px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+
+    .sm-screen-content {
+        display: block;
+    }
+
+    .lg-screen-content {
+        display: none;
+    }
+
+      
+    
+   
+}
+
+@media(min-width: 401px) and (max-width: 800px) {
+    .navbar .navbar-nav {
+        font-size: 18px;
+    }
+
+    .june_hero {
+        background-image: url("https://i.ibb.co/G7xVgNg/June-Blog-Post.png");
+        width: 400px;
+        background-size: contain;
+        height:800px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    
+    .june_hero_1 {
+        background-image: url("https://i.ibb.co/WH9YFPt/pexels-nappy-3063910.jpg");
+        width: 200px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 3%;
+    }
+    
+    .june_hero_2 {
+        width: 200px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 3%;
+        background-image: url("https://i.ibb.co/NsPQnGY/pexels-godisable-jacob-756570.jpg");
+    }
+    
+    .june_hero_3 {
+        width: 200px;
+        background-size: contain;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 3%;
+        background-image: url("https://i.ibb.co/DWwcrqS/87.png");   
+    }
+
+    .sm-screen-content {
+        display: block;
+    }
+
+    .lg-screen-content {
+        display: none;
+    }
+
+    .nums {
+        font-family: Forum;
+        font-size: 60px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 20px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+}
+
+@media(min-width: 801px) and (max-width: 1200px) {
+    .navbar .navbar-nav {
+        font-size: 20px;
+    }
+
+    .sm-screen-content {
+        display: none;
+    }
+
+    .lg-screen-content {
+        display: block;
+    }
+
+    .main-container {
+        padding: 5%;
+    }
+
+    .secondary-container {
+        padding: 5%;
+    }
+
+    .nums {
+        font-family: Forum;
+        font-size: 60px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 20px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+
+    .june_hero {
+        background-image: url("https://i.ibb.co/G7xVgNg/June-Blog-Post.png");
+        width: 500px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px;
+        margin: 80px;
+    }
+    
+    .june_hero_1 {
+        background-image: url("https://i.ibb.co/WH9YFPt/pexels-nappy-3063910.jpg");
+        width: 300px;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .june_hero_2 {
+        width: 300px;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.ibb.co/NsPQnGY/pexels-godisable-jacob-756570.jpg");
+    }
+    
+    .june_hero_3 {
+        width: 300px;
+        background-size: contain;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.ibb.co/DWwcrqS/87.png");   
+    }
+
+}
+
+@media(min-width: 1201px) {
+    .nums {
+        font-family: Forum;
+        font-size: 60px;
+        /* margin-left: -20%; */
+    }
+
+    .topic {
+        /* max-width: 90%; */
+        font-size: 20px;
+        /* margin-left: -5%; */
+    }
+
+    .subtopic {
+        font-size: 1em;
+        padding: 1% 0 5% 5%;
+        text-align: center;
+        max-width: 95%;
+        /* margin-left: -3%; */
+    }
+
+    .june_hero {
+        background-image: url("https://i.ibb.co/G7xVgNg/June-Blog-Post.png");
+        width: 500px;
+        background-size: contain;
+        height: 1000px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px;
+        margin: 80px;
+    }
+    
+    .june_hero_1 {
+        background-image: url("https://i.ibb.co/WH9YFPt/pexels-nappy-3063910.jpg");
+        width: 400px;
+        background-size: contain;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .june_hero_2 {
+        width: 400px;
+        background-size: contain;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.ibb.co/NsPQnGY/pexels-godisable-jacob-756570.jpg");
+    }
+    
+    .june_hero_3 {
+        width: 400px;
+        background-size: contain;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.ibb.co/DWwcrqS/87.png");   
+    }
+
+    .sm-screen-content {
+        display: none;
+    }
+
+    .lg-screen-content {
+        display: block;
+    }
+} 
