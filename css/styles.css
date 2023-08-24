@@ -279,9 +279,14 @@ span.views {
   
   
 @media(min-width: 200px) {
-    div.main {
+    .container-small-screen-content {
+        display: block;
+    }
+
+    .container-lg-screen-content {
         display: none;
     }
+    
     .logo {
         width: 90%;
         margin: 0 auto;
