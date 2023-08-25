@@ -5,6 +5,10 @@ body {
     text-align: center;
     font-size: 1.2em;
 } 
+
+header {
+    width: 100%;
+}
   
 .hero {
     width: 100%;
@@ -46,6 +50,8 @@ div.logo-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    width: 800px;
 }
   
 ul {
@@ -127,6 +133,16 @@ hr {
     padding: 5% 10% 0 10%;
 } 
     
+.hero {
+    width: 800px;
+    height: 900px;
+}
+
+.hero-row {
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+}
 /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
   
 li.social-item i {
@@ -163,9 +179,17 @@ p {
     padding: 2% 5%;
 }
 
-.hero {
+/* div.hero {
     width: 100%;
-}
+    height: 1200px;
+} */
+
+/* .navbar-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin: 0 auto;
+    padding: 5%;
+} */
 
 .hero-container {
     margin-top: 5%;
@@ -174,24 +198,19 @@ p {
     padding: 5%;
 }
   
-.div.hero-row{
-    flex-direction: row;
-}
-
 .hero1,
 .hero2,
 .hero3 {
-    background-size: cover;
-    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px;
     margin: 20px;
-    border: 1px solid #503335;
+   
 }
   
 .hero1 {
     background-image: url(https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png);
+
 }
   
 .hero2 {
@@ -200,6 +219,22 @@ p {
   
 .hero3 {
     background-image: url(https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png);
+}
+
+.image1 {
+    background-image: url('https://i.ibb.co/hD4HXgV/mason-380-pexels-polina-tankilevitch-5234747.png');
+}
+
+.image2 {
+    background-image: url('https://i.ibb.co/yQQmcZ3/pexels-christina-morillo-1181571.jpg');
+}
+
+.image3 {
+    background-image: url('https://i.ibb.co/JkM8g6y/mason-325-pexels-picha-stock-3894378.png');
+}
+
+.image4 {
+    background-image: url('https://i.ibb.co/ZB2gRQn/76.png');
 }
 
 .main-img {
@@ -258,6 +293,11 @@ span.views {
     padding: 10% 10% 10% 10%;
 }
   
+button {
+    border: none;
+    background-color: white;
+    color: #F13B84;
+}
 
 .footer box {
     display: grid;
@@ -287,6 +327,10 @@ span.views {
       div.logo-img {
         width: 80%;
     }
+
+    .logo {
+        width: 750px;
+    }
     
       img.nav-logo {
         width: 100%
@@ -304,41 +348,45 @@ span.views {
         font-family: Forum;
         font-size: 24px;
         text-align: center;
-      }
+    }
     
-      h2,
-      h3,
-      h4 {
+    h2,
+    h3,
+    h4 {
         text-align: center;
         font-family: Forum;
         font-weight: bold;
         padding-top: 10%;
-      }
+    }
     
-      p {
+    p {
         padding: 2% 5%;
-      }
+    }
 
-      div.hero-row {
+    .hero-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-container {
+       width: auto;
+    }
+
+    div.hero-row {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 90%;
     }
 
-    div.hero1,
-    div.hero2,
-    div.hero3 {
-        width: 90%;
-        height: 300px;
-        margin: 2% 0 2% 5%;
-    }
 
     div.single-col {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding: 10%;
     }
 
     .main-img {
@@ -349,11 +397,15 @@ span.views {
     }
 
     img.post-img {
-        width: 90%;
+        width: 300px;
+        height: 300px;;
     }
 
     .flip-card{
         width: 100%;
+        background-color: transparent;
+        width: 300px;
+        height: 400px;
     }
 
     span.month {
@@ -385,7 +437,7 @@ span.views {
         transform-style: preserve-3d;
     }
       
-    .flip-card:hover 
+    .flip-card:hover, 
     .flip-card-inner {
         transform: rotateY(180deg);
     }
@@ -396,8 +448,15 @@ span.views {
         width: 100%;
         backface-visibility: hidden;
     }
+
+    .flip-card-front {
+        background-color: transparent;
+        color: black;
+    }
       
     .flip-card-back {
+        background-color: transparent;
+        color: black;
         transform: rotateY(180deg);
     }
       
@@ -424,12 +483,22 @@ span.views {
     }
 
     .container-small-screen-content {
-        display: none;
+        display: block;
     }
 
     .container-lg-screen-content {
-        display: block;
+        display: none;
     }
+
+    /* .hero {
+        width: 800px;
+        height: 900px;
+    }
+
+    .hero-row {
+        display: flex;
+        width: 800px;
+    } */
 }
 
 @media(min-width: 801px) and (max-width: 1200px) {

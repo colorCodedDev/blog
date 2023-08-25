@@ -155,15 +155,31 @@ li.social-item i {
 }
   
 .hero1 {
-    background-image: url(https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png);
+    background-image: url('https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png');
 }
   
 .hero2 {
-    background-image: url(https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png);
+    background-image: url('https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png');
 }
   
 .hero3 {
-    background-image: url(https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png);
+    background-image: url('https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png');
+}
+
+.image1 {
+    background-image: url('https://i.ibb.co/hD4HXgV/mason-380-pexels-polina-tankilevitch-5234747.png');
+}
+
+.image2 {
+    background-image: url('https://i.ibb.co/yQQmcZ3/pexels-christina-morillo-1181571.jpg');
+}
+
+.image3 {
+    background-image: url('https://i.ibb.co/JkM8g6y/mason-325-pexels-picha-stock-3894378.png');
+}
+
+.image4 {
+    background-image: url('https://i.ibb.co/ZB2gRQn/76.png');
 }
   
 
@@ -286,7 +302,7 @@ span.views {
     .container-lg-screen-content {
         display: none;
     }
-    
+
     .logo {
         width: 90%;
         margin: 0 auto;
