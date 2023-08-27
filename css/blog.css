@@ -7,11 +7,10 @@ a {
 
 .animate__animated.animate__pulse {
     --animate-duration: 1s;
-  }
+}
 
 /* BEGIN HEADER */
 body {
-<<<<<<< HEAD
   background-color: #FFFFFF;
   color: black;
   font-family: "Darker Grotesque", sans-serif;
@@ -21,13 +20,6 @@ body {
 
 .hero {
   width: 100%;
-=======
-    background-color: #FFFFFF;
-    color: black;
-    font-family: "Darker Grotesque", sans-serif;
-    text-align: center;
-    font-size: 1.5em;
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 }
   
 h1 {
@@ -73,18 +65,11 @@ ul {
 }
 
 .menu {
-<<<<<<< HEAD
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 14px;
-=======
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 }
 
 .link {
@@ -117,7 +102,6 @@ i.link:hover {
 }
 
 i.link:selected {
-<<<<<<< HEAD
   color:#a1665e;
   text-decoration: underline;
 }
@@ -140,13 +124,6 @@ i.link:selected {
   padding: 5% 10% 0 10%;
 } 
 
-=======
-    color:#a1665e;
-    text-decoration: underline;
-
-}
-
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
 
 li.social-item i {
@@ -159,7 +136,6 @@ li.social-item i {
     }
     }
 
-<<<<<<< HEAD
 /* *****end of reference*****/
 
 h1 {
@@ -288,11 +264,6 @@ p {
   justify-content: center;
   margin-top: 700px;
 }
-=======
-}
-/* 
-*****end of reference***** */
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 
 
 /* BEGIN CONTENT */
@@ -473,7 +444,6 @@ font-family: 'Zen Kurenaido', sans-serif; */
 
 }
 
-<<<<<<< HEAD
 @media(min-width: 1201px) {
   section.hero {
     display: none;
@@ -676,8 +646,6 @@ font-family: 'Zen Kurenaido', sans-serif; */
     margin-top: 30%;
     font-size: 25px;
   }
-=======
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 
 
 

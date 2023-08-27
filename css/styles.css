@@ -103,23 +103,14 @@ h4 {
 }
 
 .hero1 {
-<<<<<<< HEAD
     background-image: url('https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png');
-=======
-  background-image: url(https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png);
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 }
 
 .hero2 {
-<<<<<<< HEAD
     background-image: url('https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png');
-=======
-  background-image: url(https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png);
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 }
 
 .hero3 {
-<<<<<<< HEAD
     background-image: url('https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png');
 }
 
@@ -142,9 +133,6 @@ h4 {
 
 hr {
     padding: 20px 0 20px 0;
-=======
-  background-image: url(https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png);
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 }
 
 .recent-posts {
@@ -422,7 +410,6 @@ post-title {
 }
 
 .copyright-box {
-<<<<<<< HEAD
     display: flex;
     align-items: center;
     padding: 20px 200px;
@@ -730,11 +717,4 @@ post-title {
     }
       
 
-=======
-  display: flex;
-  align-items: center;
-  padding: 20px 200px;
-  justify-content: center;
-  margin-top: 700px;
->>>>>>> parent of 30c903a (feat: uploading blog website to github repository)
 }
