@@ -6,11 +6,7 @@ body {
     color: black;
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
-    font-size: 1.2em;
-} */
-  
-.hero {
-    width: 100%;
+    font-size: 1.5em;
 }
   
 body ul.menu {
@@ -35,111 +31,65 @@ body ul.menu li.social-item:hover{
   
 body ul.menu li.social-item:hover {
     transform: scale(1.5);
-}
-  
+} 
+
 div.logo-container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin-bottom: -550px;
 }
-  
+
 .logo {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
-  
+
 ul {
     list-style: none;
 }
-  
-a {
-    text-decoration: none;
-}
-    
+
 .menu {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-  
+
 .link {
     color: #D3AB9E;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
-  
+
 .link:hover {
     color:#2B1A12;
     transform: scale(1.1);
 }
-  
-.link::selected {
-    color: #F13B84;
+
+.link:selected {
+    color: #DBA395;
     text-decoration: underline;
 }
-  
-hr {
-    padding: 20px 0 20px 0;
-}
-  
-i.link {
-    color: #F13B84;
-    transition: all 0.3s ease-in-out;
-}
-  
-i.link:hover {
-    color:#d1a3a4;
-    transform: scale(1.1);
-}
-  
-i.link:selected {
-    color:#a1665e;
-    text-decoration: underline;  
-}
-  
-.logo-img {
-    width: 100%;
-}
-  
-.navbar {
-    flex-direction: column;
-    box-shadow: none;
-}
-  
-.menu {
-    font-size: 14px;
-}
-  
-.navbar .navbar-nav {
-    margin-top: 0.5em;
-}
-  
-.nav-logo {
-    width: 100%;
-    padding: 5% 10% 0 10%;
-} 
-    
+
+
 /* ***code taken from: https://codepen.io/AdamCCFC/pen/WvzBKq*** */
-  
+
 li.social-item i {
     width: 1.2em;
     &.grow {
         transition: all .2s ease-in-out;
-  
+
     &:hover {
         transform: scale(1.5);
     }
     }
+
 }
-  
-/* *****end of reference******/
-  
-hr.menu {
+/* 
+*****end of reference***** */
+
+  hr.menu {
     padding: 0;
-}
+  }
 
 /* BEGIN CONTENT */
 
@@ -147,10 +97,6 @@ hr.menu {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-/* 
-div.container.text-center {
-    margin-left: -5%;
-} */
 
 .jan_hero {
     background-image: url(https://i.ibb.co/k86sJGV/jan-colorcodeddev-com.png);
@@ -225,39 +171,38 @@ div.container.text-center {
 }
 
 .july_hero {
-    margin-top: 10%;
-    width: 100%;
+    background-image: url(https://i.ibb.co/mqt8ynq/July-final.png);
+    width: 500px;
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 80px;
+    border: 1px solid #503335;
 }
 
 h1 {
     font-family: Forum;
     text-align: center;
-}
+  }
   
-h2,
-h3,
-h4,
-h5 {
+  h2,
+  h3,
+  h4,
+  h5 {
     text-align: center;
     font-family: Forum;
     font-weight: bold;
-    padding-top: 3%;
 }
 
-.space-top {
-    padding-top: 15%;
-}
-
-.hero {
-    width: 100%;
-}
-
-.topic {
-    padding: 10% 10%;
+  .topic {
+    padding: 1% 10%;
 }
 
 .subtopic {
     padding: 1% 10%;
+    text-align: left;
     line-height: 1.5em;
 }
 
@@ -290,6 +235,7 @@ h5 {
     padding: 20% auto;
 }
 
+
 .img-2 {
     padding: 5% 0;
     width: 85%;
@@ -301,7 +247,7 @@ h5 {
 }
 
 .resources-img {
-    width: 80%;
+    width: 200px;
 }
 
 .resources-img-2 {
@@ -332,6 +278,7 @@ h5 {
 .resource-title {
     padding: 10% 5%;
 }
+
 
 /* february */
 
@@ -460,6 +407,16 @@ span.june_em {
 
 /* july */
 
+.july_hero {
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #503335;
+}
+
 .july_hero_1 {
     background-image: url(https://i.ibb.co/YQHm0m2/79.png);
 }
@@ -499,11 +456,9 @@ span.june_em {
 
 /* generic months */
 
-h3.generictopic {
-    border: 1px solid red;
+.generictopic {
     padding: 5% 10%;
     font-family: Forum;
-    color:#2B1A12;
 }
 
 .generic-subtopic,
@@ -562,73 +517,10 @@ font-family: 'Zen Kurenaido', sans-serif; */
 
 
 
-@media(min-width: 200px) {
+@media(min-width: 600px) and (max-width: 900px) {}
 
-    /* july */
 
-    navbar .navbar-nav {
-        font-size: 14px;
-    }
+
+@media(min-width: 900px) {
     
-    .lg-content-container {
-        display: none;
-    }
-
-    .sm-content-container {
-        display: block;
-        padding: 5%;
-    }
-
-    .img-logo {
-        width: 70%;
-    }
-
-    .main-content-sm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0 auto;
-    }
-
-    .july-img {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
-@media(min-width: 510px) {
-
-    /* july */
-
-    h1.blog-title {
-        padding: 0 5%;
-    }
-    .internship-section {
-        border: 1px solid #F13B84;
-        color: #F13B84;
-        width: 50%;
-        margin: 0 auto;
-    }
-}
-
-
-@media(min-width: 1200px) {
-    .sm-content-container {
-        display: none;
-    }
-
-    .lg-content-container {
-        display: block;
-    }
-
-    .too-big {
-        width: 75%;
-    }
-
-    .july-hero {
-        width: 50%;
-        margin: 10%;
-        padding: 10%;
-    }
 }
