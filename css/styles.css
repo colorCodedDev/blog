@@ -477,9 +477,7 @@ span.views {
         height: 300px;
     }
 
-    .more-posts,
-    .recent-posts,
-    .all-posts {
+    .more-posts {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -487,7 +485,6 @@ span.views {
         color: black;
         margin-top: 10%;
         margin-bottom: 10%;
-        border: 1px solid black;
     }
 
     div.flip-card.flip-card-all {
@@ -772,9 +769,7 @@ span.views {
         height: 300px;
     }
 
-    .more-posts,
-    .recent-posts,
-    .all-posts {
+    .more-posts {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -782,7 +777,6 @@ span.views {
         color: black;
         margin-top: 10%;
         margin-bottom: 10%;
-        border: 1px solid black;
     }
 
     div.flip-card.flip-card-all {
