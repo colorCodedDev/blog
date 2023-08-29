@@ -286,6 +286,10 @@ span.views {
   
   
 @media(min-width: 200px) and (max-width: 400px) {
+    body {
+        background-color: red;
+    }
+
     .navbar .navbar-nav {
         font-size: 14px;
     }
@@ -425,6 +429,10 @@ span.views {
 }
 
 @media(min-width: 401px) and (max-width: 800px) {
+    body {
+        background-color: red;
+    }
+
     .navbar .navbar-nav {
         font-size: 18px;
     }
@@ -439,6 +447,10 @@ span.views {
 }
 
 @media(min-width: 801px) and (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+
     .navbar .navbar-nav {
         font-size: 20px;
     }
@@ -625,11 +637,15 @@ span.views {
 
 @media(min-width: 1201px) {
 
-    .sm-screen-content {
+    body {
+        background-color: red;
+    }
+
+    section.sm-screen-content {
         display: none;
     }
 
-    .lg-screen-content {
+    section.lg-screen-content {
         display: block;
     }
 
@@ -667,15 +683,15 @@ span.views {
     }
       
     .hero1 {
-        background-image: url(https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png);
+        background-image: url("https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png");
     }
       
     .hero2 {
-        background-image: url(https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png);
+        background-image: url("https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png");
     }
       
     .hero3 {
-        background-image: url(https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png);
+        background-image: url("https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png");
     }
     
     .main-img {
