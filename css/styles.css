@@ -682,6 +682,10 @@ span.views {
         width: 80%;
         padding: 50px;
     }
+
+    .post-img {
+        width: 60%;
+    }
     
     span.month {
         float: left;
