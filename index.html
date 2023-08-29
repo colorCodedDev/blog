@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Blog</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,36 +13,43 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/template.css">
     </head>
     <body>
-        <div class="container mx-auto entire">
+        <div>
 
             <!-- begin navbar -->
 
-            <div class="container">
-                <div class="header box">
-                    <div class="logo-container">
-                        <img class="logo" src="./images/color_coded_logo.png" alt="color-coded-logo">
-                    </div>
-                    <div class="nested-header">
-                        <ul class="menu left-side">
-                            <li class="left-side-itewm"><a href="index.html" class="link animate__animated animate__pulse">About</a></li>
-                            <li class="left-side-item"><a href="blog.html" class="link animate__animated animate__pulse">Blog</a></li>
-                            <li class="left-sclasse-item"><a href="#" class="link animate__animated animate__pulse">Contact</a></li>
-                        </ul>
-                    </div>
-                    <hr class="menu">
-                    <div class="nested-header">
-                        <ul class="menu social">
-                            <li class="social-item"><i class="fa-brands fa-instagram"></i></li>
-                                <li class="social-item"><i class="fa-brands fa-facebook-f"></i></li>
-                                <li class="social-item"><i class="fa-brands fa-linkedin-in"></i></li>
-                                <li class="social-item"><i class="fa-brands fa-codepen"></i></li>
-                        </ul>
+            <header>
+                <div class="container hero-container">
+                    <div class="logo">
+                        <div class="logo-img"><img src="./images/color_coded_logo.png" alt="logo" class="nav-logo"></div>
+                        <nav class="navbar navbar-expand-lg navbar-light light">
+                            <div class="navbar-expand" id="navbarNav">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link link" href="index.html">About<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item"><i class="btn btn-light fa-brands fa-facebook-f nav-link social-item" href="https://www.facebook.com"></i></li>
+                                    <li class="nav-item social-item"><i class="btn btn-light fa-brands fa-instagram nav-link social-item" href="https://www.instagram.com"></i></li>
+                                    <li class="nav-item social-item"><i class="btn btn-light fa-brands fa-linkedin-in nav-link social-item" href="https://www.linkedin.com"></i></li>
+                                    <li class="nav-item social-item"><i class="btn btn-light fa-brands fa-codepen nav-link social-item" href="https://www.codepen.com"></i></li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </div>
+            </header>
+
 
             <!--begin hero -->
 
@@ -268,15 +276,21 @@
                 </div>
                 </div>
             </section>
-        </div>
-
+        
 
 
             <!-- begin footer -->
 
-            <div class="footer box">
-                <p class="copyright">All Rights Reserved colorCodedDevelopment © Tomeka Durling 2023</p>
-            </div>
+
+            <section class="footer">
+                <div class="row bottom-nav">
+                    <a href="#top"><p class="link">Return To Top</p></a>
+                </div>
+                <div><a class="social-item" href="index.html">Back To Main Page</a></div>
+                <div class="footer box">
+                    <p class="copyright">All Rights Reserved colorCodedDevelopment © Tomeka Durling 2023</p>
+                </div>
+            </section>
         </div>
 
        <!-- MDB -->
