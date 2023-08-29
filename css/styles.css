@@ -452,6 +452,7 @@ span.views {
     }
 
     div.hero-row {
+        display: flex;
         flex-direction: row;
     }
 
@@ -630,6 +631,268 @@ span.views {
 
     .lg-screen-content {
         display: block;
+    }
+
+    button {
+        border: none;
+        background-color: white;
+        color: #F13B84;
+    }
+    
+    .hero {
+        width: 100%;
+    }
+    
+    .hero-container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+      
+    .div.hero-row{
+        flex-direction: row;
+    }
+    
+    .hero1,
+    .hero2,
+    .hero3 {
+        background-size: cover;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid #503335;
+    }
+      
+    .hero1 {
+        background-image: url(https://i.ibb.co/X8X6Jcb/mason-250-pexels-nappy-3063910.png);
+    }
+      
+    .hero2 {
+        background-image: url(https://i.ibb.co/TL6v1tc/mason-250-pexels-tina-bowie-938013.png);
+    }
+      
+    .hero3 {
+        background-image: url(https://i.ibb.co/CVkg6TH/mason-180-pexels-mikhail-nilov-7623822.png);
+    }
+    
+    .main-img {
+        width: 700px;
+        padding: 50px;
+    }
+    
+    span.month {
+        float: left;
+        font-size: 18px;
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+      
+    span.views {
+        float: right;
+        font-size: 18px;
+        padding-right: 10%;
+        padding-bottom: 10%
+    }
+    
+    .flip-card-recent {
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+    }
+      
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+      
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+      
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+    }
+      
+    .flip-card-back {
+        transform: rotateY(180deg);
+    }
+      
+    .flip-back {
+        color: #3d0c02;
+        font-family: Chathura;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 10% 10% 10% 10%;
+    }
+    
+    .flip-card-recent {
+        width: 100%;
+        height: 300px;
+    }
+
+    .more-posts,
+    .recent-posts,
+    .all-posts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border: 1px solid black;
+    }
+
+    div.flip-card.flip-card-all {
+        width: 200x;
+        height: 200px;
+        color: white;
+    }
+
+    .post-month {
+        color: white;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .monthly-title {
+        color: white;
+        padding: 10px 0;
+    }
+
+    h3.side-heading {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .flip-card-front-all-posts{
+        color: white;
+    }
+
+    .posts {
+        width: 200px;
+        height: 200px;
+    }
+      
+    .post-month {
+        font-weight: bold;
+        border: 1px solid white;
+        padding: 5%;
+        font-family: Forum;
+    }
+      
+    .monthly-title {
+        padding: 5%
+    }
+      
+    .january {
+        background-color: #c58c85;
+        text-decoration: none;
+    }
+      
+    .february {
+        background-color: #ecbcb4;
+        text-decoration: none;
+    }
+      
+    .march {
+        background-color: #d1a3a4;
+        text-decoration: none;
+    }
+      
+    .april {
+        background-color: #a1665e;
+        text-decoration: none;
+    }
+      
+    .march {
+        background-color: #503335;
+        text-decoration: none;
+    }
+      
+    .april {
+        background-color: #592f2a;
+        text-decoration: none;
+    }
+      
+    .may {
+        background-color: #592f2a;
+        text-decoration: none;
+    }
+      
+    .june {
+        background-color: #5a362a;
+        text-decoration: none;
+    }
+      
+    .july {
+        background-color: #a87869;
+        text-decoration: none;
+    }
+      
+    .august {
+        background-color: #bf8977;
+        text-decoration: none;
+    }
+      
+    .september {
+        background-color: #c69d87;
+    }
+      
+    .october {
+        background-color: #3d0c02;
+        text-decoration: none;
+    }
+      
+    .november {
+        background-color: #260701;
+        text-decoration: none;
+    }
+      
+    .december {
+        background-color: #c58c85;
+        text-decoration: none;
+    }
+      
+    .cat {
+        border: 1px solid black;
+        padding: 5px;
+        width: 200px;
+    }
+      
+    .empty {
+        height: 5px;
+        border: none;
+    }
+      
+    .sub {
+        font-size: 8px;
+        padding-left: 10px;
+        margin-top: -20px;
+    }
+      
+    em {
+        color: black;
+        font-size: 10px;
+    }
+      
+    span {
+        padding: 0 20px;
+    }
+      
+    h3.side-heading {
+        font-family: "Thasadith";
+        color: black;
+        text-decoration: underline;
     }
 
 }
