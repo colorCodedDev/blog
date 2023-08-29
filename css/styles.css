@@ -679,12 +679,25 @@ span.views {
     }
     
     .main-img {
-        width: 80%;
-        padding: 50px;
+        width: 90%;
     }
 
-    .post-img {
-        width: 60%;
+    img.post-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .left-side {
+        width: 70%;
+    }
+
+    .right-side {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        padding-left: 10%;
     }
     
     span.month {
@@ -782,9 +795,9 @@ span.views {
         color: white;
     }
 
-    .posts {
-        width: 200px;
-        height: 200px;
+    img.posts {
+        width: 300px;
+        height: 300px;
     }
       
     .post-month {
