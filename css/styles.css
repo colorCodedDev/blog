@@ -163,6 +163,12 @@ p {
     padding: 2% 5%;
 }
 
+button {
+    border: none;
+    background-color: white;
+    color: #F13B84;
+}
+
 .hero {
     width: 100%;
 }
@@ -437,12 +443,181 @@ span.views {
         font-size: 20px;
     }
 
-      .sm-screen-content {
+    .sm-screen-content {
         display: none;
     }
 
     .lg-screen-content {
         display: block;
+    }
+
+    div.hero-row {
+        flex-direction: row;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+
+    .flip-card-recent {
+        width: 100%;
+        height: 300px;
+    }
+
+    .more-posts,
+    .recent-posts,
+    .all-posts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: black;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        border: 1px solid black;
+    }
+
+    div.flip-card.flip-card-all {
+        width: 200x;
+        height: 200px;
+        color: white;
+    }
+
+    .post-month {
+        color: white;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .monthly-title {
+        color: white;
+        padding: 10px 0;
+    }
+
+    h3.side-heading {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .flip-card-front-all-posts{
+        color: white;
+    }
+
+    .posts {
+        width: 200px;
+        height: 200px;
+    }
+      
+    .post-month {
+        font-weight: bold;
+        border: 1px solid white;
+        padding: 5%;
+        font-family: Forum;
+    }
+      
+    .monthly-title {
+        padding: 5%
+    }
+      
+    .january {
+        background-color: #c58c85;
+        text-decoration: none;
+    }
+      
+    .february {
+        background-color: #ecbcb4;
+        text-decoration: none;
+    }
+      
+    .march {
+        background-color: #d1a3a4;
+        text-decoration: none;
+    }
+      
+    .april {
+        background-color: #a1665e;
+        text-decoration: none;
+    }
+      
+    .march {
+        background-color: #503335;
+        text-decoration: none;
+    }
+      
+    .april {
+        background-color: #592f2a;
+        text-decoration: none;
+    }
+      
+    .may {
+        background-color: #592f2a;
+        text-decoration: none;
+    }
+      
+    .june {
+        background-color: #5a362a;
+        text-decoration: none;
+    }
+      
+    .july {
+        background-color: #a87869;
+        text-decoration: none;
+    }
+      
+    .august {
+        background-color: #bf8977;
+        text-decoration: none;
+    }
+      
+    .september {
+        background-color: #c69d87;
+    }
+      
+    .october {
+        background-color: #3d0c02;
+        text-decoration: none;
+    }
+      
+    .november {
+        background-color: #260701;
+        text-decoration: none;
+    }
+      
+    .december {
+        background-color: #c58c85;
+        text-decoration: none;
+    }
+      
+    .cat {
+        border: 1px solid black;
+        padding: 5px;
+        width: 200px;
+    }
+      
+    .empty {
+        height: 5px;
+        border: none;
+    }
+      
+    .sub {
+        font-size: 8px;
+        padding-left: 10px;
+        margin-top: -20px;
+    }
+      
+    em {
+        color: black;
+        font-size: 10px;
+    }
+      
+    span {
+        padding: 0 20px;
+    }
+      
+    h3.side-heading {
+        font-family: "Thasadith";
+        color: black;
+        text-decoration: underline;
     }
 
 }
