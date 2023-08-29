@@ -286,10 +286,7 @@ span.views {
   
   
 @media(min-width: 200px) and (max-width: 400px) {
-    body {
-        background-color: red;
-    }
-
+    
     .navbar .navbar-nav {
         font-size: 14px;
     }
@@ -429,10 +426,7 @@ span.views {
 }
 
 @media(min-width: 401px) and (max-width: 800px) {
-    body {
-        background-color: red;
-    }
-
+    
     .navbar .navbar-nav {
         font-size: 18px;
     }
@@ -447,10 +441,7 @@ span.views {
 }
 
 @media(min-width: 801px) and (max-width: 1200px) {
-    body {
-        background-color: red;
-    }
-
+    
     .navbar .navbar-nav {
         font-size: 20px;
     }
@@ -633,10 +624,6 @@ span.views {
 }
 
 @media(min-width: 1201px) {
-
-    body {
-        background-color: red;
-    }
 
     section.sm-screen-content {
         display: none;
