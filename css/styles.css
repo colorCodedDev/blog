@@ -532,7 +532,7 @@ span.views {
     }
 
     .post-img {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -688,6 +688,11 @@ span.views {
         width: 200px;
         height: 200px;
     }
+
+    .post-img {
+        width: 100%;
+        margin: 0 auto;
+    }
       
     .post-month {
         font-weight: bold;
@@ -841,9 +846,6 @@ span.views {
         height: 600px;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 10px;
-        margin: 20px;
-        border: 1px solid #503335;
     }
       
     .hero1 {
@@ -862,7 +864,7 @@ span.views {
         width: 100%;
     }
 
-    img.post-img {
+    .post-img {
         width: 300px;
         height: 300px;
     }
