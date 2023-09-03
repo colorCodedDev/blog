@@ -514,9 +514,6 @@ span.views {
         height: 600px;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 10px;
-        margin: 20px;
-        border: 1px solid #503335;
     }
 
     div.single-col {
@@ -613,6 +610,10 @@ span.views {
 }
 
 @media(min-width: 801px) and (max-width: 1200px) {
+
+    body {
+        font-size: 1.4em;
+    }
     
     .navbar .navbar-nav {
         font-size: 20px;
@@ -626,13 +627,22 @@ span.views {
         display: block;
     }
 
+    .hero {
+        width: 100%;
+    }
+
     div.hero-row {
         display: flex;
         flex-direction: row;
     }
 
-    .main-img {
-        width: 80%;
+    .hero1,
+    .hero2,
+    .hero3 {
+        background-size: cover;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .flip-card-recent {
@@ -642,12 +652,10 @@ span.views {
 
     .more-posts {
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
         color: black;
-        margin-top: 10%;
         margin-bottom: 10%;
+        padding-left: 5%;
     }
 
     div.flip-card.flip-card-all {
