@@ -340,6 +340,18 @@ span.views {
         margin: 0 auto;
     }
 
+    .hero1,
+    .hero2,
+    .hero3 {
+        background-size: contain;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid #503335;
+    }
+
     div.single-col {
         display: flex;
         flex-direction: column;
@@ -472,6 +484,15 @@ span.views {
         padding: 2% 10%;
     }
 
+    .hero {
+        width: 100%;
+    }
+    
+    .hero-container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
     div.hero-row {
         display: flex;
         flex-direction: column;
@@ -486,6 +507,18 @@ span.views {
         margin: 0 auto;
     }
 
+    .hero1,
+    .hero2,
+    .hero3 {
+        background-size: contain;
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid #503335;
+    }
+
     div.single-col {
         display: flex;
         flex-direction: column;
@@ -494,15 +527,16 @@ span.views {
     }
 
     .main-img {
-        width: 70%;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
         padding: 5%;
     }
 
-    img.post-img {
-        width: 70%;
+    .post-img {
+        width: 80%;
+        margin: 0 auto;
     }
 
     .flip-card{
