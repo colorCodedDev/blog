@@ -319,11 +319,11 @@ span.views {
         text-align: center;
         font-family: Forum;
         font-weight: bold;
-        padding-top: 10%;
+        padding: 10%;
       }
     
       p {
-        padding: 2% 5%;
+        padding: 2% 10%;
       }
 
       div.hero-row {
@@ -335,9 +335,9 @@ span.views {
     div.hero1,
     div.hero2,
     div.hero3 {
-        width: 90%;
+        width: 70%;
         height: 300px;
-        margin: 2% 0 2% 5%;
+        margin: 0 auto;
     }
 
     div.single-col {
@@ -352,7 +352,7 @@ span.views {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        padding: 0;
+        padding: 5%;
     }
 
     img.post-img {
@@ -424,7 +424,11 @@ span.views {
         color: black;
         margin: 5%;
         height: 1200px;
-    }     
+    }    
+    
+    .copyright {
+        padding: 10%;;
+    }
 }
 
 @media(min-width: 401px) and (max-width: 800px) {
