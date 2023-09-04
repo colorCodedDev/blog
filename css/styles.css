@@ -504,6 +504,7 @@ span.views {
         width: 70%;
         height: 300px;
         margin: 0 auto;
+        margin-bottom: 10%;
     }
 
     .hero1,
@@ -523,7 +524,7 @@ span.views {
     }
 
     .main-img {
-        width: 70%;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -540,6 +541,10 @@ span.views {
         height: 400px;
         margin-top: 10%;
         margin-bottom: 30%;
+    }
+
+    .flip-card-inner {
+        margin-bottom: 40%;
     }
 
     span.month {
