@@ -163,6 +163,10 @@ p {
     padding: 2% 5%;
 }
 
+.bio-image {
+    width: 300px;
+}
+
 .footer box {
     display: grid;
     align-items: center;
@@ -184,6 +188,14 @@ p {
   
   
 @media(min-width: 200px) and (max-width: 400px) {
+    .lg-content-container {
+        display: none;
+    }
+
+    .sm-content-container {
+        display: block;
+    }
+
     .navbar .navbar-nav {
         font-size: 14px;
     }
@@ -214,24 +226,43 @@ p {
       p {
         padding: 2% 5%;
       }
-      
-    
-    
 }
 
 @media(min-width: 401px) and (max-width: 800px) {
     .navbar .navbar-nav {
         font-size: 18px;
     }
+
+    .lg-content-container {
+        display: none;
+    }
+
+    .sm-content-container {
+        display: block;
+    }
 }
 
 @media(min-width: 801px) and (max-width: 1200px) {
     .navbar .navbar-nav {
         font-size: 20px;
-      }
+    }
+
+    .lg-content-container {
+        display: block;
+    }
+
+    .sm-content-container {
+        display: none;
+    }
 
 }
 
 @media(min-width: 1201px) {
+    .lg-content-container {
+        display: block;
+    }
 
+    .sm-content-container {
+        display: none;
+    }
 }
