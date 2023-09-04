@@ -160,7 +160,7 @@ h4 {
 }
 
 p {
-    padding: 2% 5%;
+    padding: 20%;
 }
 
 button {
@@ -193,7 +193,6 @@ button {
     background-repeat: no-repeat;
     padding: 10px;
     margin: 20px;
-    border: 1px solid #503335;
 }
   
 .hero1 {
@@ -336,7 +335,6 @@ span.views {
     div.hero1,
     div.hero2,
     div.hero3 {
-        width: 50%;
         height: 300px;
         margin: 0 auto;
     }
@@ -360,7 +358,7 @@ span.views {
     }
 
     .main-img {
-        width: 300px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -524,7 +522,7 @@ span.views {
     }
 
     .main-img {
-        width: 100%;
+        width: 70%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
