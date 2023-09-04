@@ -337,6 +337,7 @@ span.views {
     div.hero3 {
         height: 300px;
         margin: 0 auto;
+        margin-bottom: 10%;
     }
 
     .hero1,
@@ -537,6 +538,8 @@ span.views {
     .flip-card{
         width: 100%;
         height: 400px;
+        margin-top: 10%;
+        margin-bottom: 30%;
     }
 
     span.month {
@@ -643,8 +646,12 @@ span.views {
         background-repeat: no-repeat;
     }
 
+    p {
+        padding: unset;
+    }
+
     .main-img {
-        width: 300px;
+        width: 100%;
     }
 
     .flip-card {
